@@ -90,10 +90,10 @@ body {
   color: #f3f3f3;
   .nav-wrap {
     width: 1080px;
-    .til{
+    .til {
       float: left;
-      .til-name{
-        margin-right:10px; 
+      .til-name {
+        margin-right: 10px;
       }
     }
     .til-l {
@@ -103,10 +103,9 @@ body {
       text-align: right;
       flex-direction: right;
       .til-con {
-          display: flex;
-          float: right;
+        display: flex;
+        float: right;
         .til-name-1 {
-          
         }
       }
     }

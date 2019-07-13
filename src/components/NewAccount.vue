@@ -7,7 +7,7 @@
       <div class="ipt">
         <input v-model="password" placeholder="请输入密码" />
       </div>
-      <div  class="ipt">
+      <div class="ipt">
         <input v-model="realname" placeholder="请输入真实姓名" />
       </div>
       <div class="btn-con">
@@ -27,12 +27,12 @@ export default {
     return {
       username: "",
       password: "",
-      realname:"",
+      realname: ""
     };
   },
   methods: {
     close() {
-      this.toggleShow('new');
+      this.toggleShow("new");
     },
     login() {
       let postData = {

@@ -19,15 +19,15 @@
 import axios from "axios";
 export default {
   name: "BlogList",
-  props: ['toggleShow'],
+  props: ["toggleShow"],
   data() {
     return {
       username: "",
-      password: "",
+      password: ""
     };
   },
   methods: {
-    close(){
+    close() {
       this.toggleShow("login");
     },
     login() {
@@ -47,10 +47,9 @@ export default {
         url: "/api/user/login"
       };
       axios(options)
-        .then(function(response) {
+        .then(response => {
           console.log(response);
           this.close();
-          
         })
         .catch(function(error) {
           console.log(error);
