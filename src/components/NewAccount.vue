@@ -22,7 +22,6 @@
 import axios from "axios";
 export default {
   name: "BlogList",
-  props: ["toggleShow"],
   data() {
     return {
       username: "",
@@ -32,7 +31,7 @@ export default {
   },
   methods: {
     close() {
-      this.toggleShow("new");
+      this.$emit("toggleShow", "new");
     },
     login() {
       let postData = {
@@ -50,7 +49,7 @@ export default {
         .then(function(response) {
           console.log(response);
           alert("创建成功");
-          this.toggleShow("new");
+          this.close();
         })
         .catch(function(error) {
           console.log(error);

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Login v-if="showLogin" :toggleShow="toggleShow" />
-    <NewAccount v-if="showNew" :toggleShow="toggleShow" />
+    <NewAccount v-if="showNew" v-on:toggleShow="toggleShow" />
     <div id="nav">
       <div class="nav-wrap">
         <div class="til">
