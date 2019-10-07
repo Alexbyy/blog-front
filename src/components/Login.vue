@@ -49,10 +49,12 @@ export default {
       axios(options)
         .then(response => {
           console.log(response);
+          alert("登陆成功");
           this.close();
         })
         .catch(function(error) {
           console.log(error);
+          alert("登录失败请重试");
         });
     }
   }

@@ -101,6 +101,7 @@ export default {
     .title {
       text-align: left;
       flex: 1;
+      cursor: pointer;
       font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
         "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
     }

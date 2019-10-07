@@ -55,6 +55,7 @@ export default {
 </script>
 
 <style lang="less">
+@import "./assets/base_style/index.less";
 body {
   margin: 0;
   padding: 0;
@@ -106,6 +107,10 @@ body {
         display: flex;
         float: right;
         .til-name-1 {
+          cursor: pointer;
+        }
+        .til-name {
+          cursor: pointer;
         }
       }
     }

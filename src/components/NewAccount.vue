@@ -49,9 +49,12 @@ export default {
       axios(options)
         .then(function(response) {
           console.log(response);
+          alert("创建成功");
+          this.toggleShow("new");
         })
         .catch(function(error) {
           console.log(error);
+          alert("创建失败");
         });
     }
   }
