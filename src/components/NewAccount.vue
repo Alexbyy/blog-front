@@ -46,12 +46,12 @@ export default {
         url: "/api/user/new"
       };
       axios(options)
-        .then(function(response) {
+        .then(response =>{
           console.log(response);
           alert("创建成功");
           this.close();
         })
-        .catch(function(error) {
+        .catch(error => {
           console.log(error);
           alert("创建失败");
         });
