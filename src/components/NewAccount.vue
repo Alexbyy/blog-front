@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap" v-ob:click="close">
+  <div class="wrap" v-on:click="close">
     <div class="con">
       <div class="ipt">
         <input v-model="username" placeholder="请输入用户名" />
